@@ -91,12 +91,15 @@ This is a great way to:
 
 ## 3) Questions
 
-- What is the difference between a regular and a bare repository?
-- Why is a bare repository required on the remote?
-- What is the structure of a Git SSH remote URL?
-- What happens if the SSH key or password is not accepted?
-- What output do you get from `git remote -v`?
-- Can you clone your remote repo from another machine?
+- What is the difference between a regular and a bare repository? A bare repository is only for storing the prozess, it's not ment to work there. Because of that your files are also not visible in the --bare repo
+- Why is a bare repository required on the remote? It's required, so that people could push and pull the data from there, because it's not ment to work on your server.
+- What is the structure of a Git SSH remote URL? <your-user>@<your-remote-host>:~/repos/myproject
+- What happens if the SSH key or password is not accepted? You get an error. For example : Permission denied (publickey,password).
+fatal: Could not read from remote repository. 
+- What output do you get from `git remote -v`? origin  aspire:~/repos/myproject (fetch) This stand for wich remote is known by git.
+origin  aspire:~/repos/myproject (push) This shows where my local git pushes
+- Can you clone your remote repo from another machine? Yes, that's possible
+  
 
 ## 4) Advice
 
